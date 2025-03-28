@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourApp</title>
+
+    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  </head>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  
+    <link rel="stylesheet" href="{% static 'enroll/css/style.css' %}">
+  </head>
+  <body>
+
+    <!--header-->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo">Explore<span>N</span>epal </a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!--login form-->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="Enter your mail" />
+        <input type="password" class="box" placeholder="Enter your password" />
+        <input type="submit" class="btn" value="Login now" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+        <p>forgot password? <a href="#">click here!</a></p>
+        <p>don't have an account <a href="#">Register now</a></p>
+      </form>
+    </div>
+
+    <!--home section-->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Refresh yourself with a positive tour</h3>
+        <p>Travel with us, our Nepal is very beautiful</p>
+        <a href="#" class="btn">Explore more...</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src=video22.mp4"></span>
+        <span class="vid-btn" data-src=video27.mp4"></span>
+        <span class="vid-btn" data-src=video13.mp4"></span>
+        <span class="vid-btn" data-src=video16.mp4"></span>
+        <span class="vid-btn" data-src=video33.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src=video22.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    {% comment %} <!--book--> {% endcomment %}
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="picture.jpg" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h2>Destination</h2>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h2>Travellers</h2>
+            <input type="number" placeholder="Number of visitors" />
+          </div>
+          <div class="inputBox">
+            <h2>Arraivals</h2>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h2>Departure</h2>
+            <input type="date" />
+          </div>
+
+          <input type="submit" class="btn" value="Book now" />
+        </form>
+      </div>
+    </section>
+
+    <!--packages-->
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="ktm.jpg" alt="ktm" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Himalayan</h3>
+            <p>
+              It is the capital city of Neapl, here you can spend quality
+              moments and also make a friendly stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              .packages .box-container .box .content h3
+            </div>
+            <div class="price">Rs5000 <span>Rs8000</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="poonhill.jpg" alt="ktm" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>POON hill</h3>
+            <p>
+              It is the capital city of Neapl, here you can spend quality
+              moments and also make a friendly stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">Rs5000 <span>Rs8000</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="swoyambu.jpg" alt="ktm" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Swyambu</h3>
+            <p>
+              It is the capital city of Neapl quality moments and also make a
+              friendly stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">Rs5000 <span>Rs8000</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="boudhastupa.jpg" alt="ktm" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Kathmandu</h3>
+            <p>
+              It is the capital city of Neapl quality moments and also make a
+              friendly stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">Rs5000 <span>Rs8000</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="buddhagumba.jpg" alt="ktm" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>WestNepal</h3>
+            <p>
+              It is the capital city of Neapl quality moments and also make a
+              friendly stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <div class="price">Rs5000 <span>Rs8000</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="boudhastupa.jpg" alt="ktm" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Kathmandu</h3>
+            <p>
+              It is the capital city of Neapl, here you can spend quality
+              moments and also make a friendly stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">Rs5000 <span>Rs8000</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>Cost friendly Hotels</h3>
+          <p>We provide you with a comfortable accomodation.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>Fooding</h3>
+          <p>We provide you with authentic food & drinks.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>We ensure your safety!</h3>
+          <p>We provide you with a comfortable accomodation.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>Globally Recognized</h3>
+          <p>We provide you with a comfortable accomodation.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>Fastest Transportation</h3>
+          <p>We provide you with a comfortable accomodation.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>Adventure</h3>
+          <p>We provide you with a comfortable accomodation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--gallery-->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="himal1.jpg" />
+          <div class="content">
+            <h3>Beautiful Nature</h3>
+            <p>We Take you through the mother nature</p>
+            <a href="#" class="btn">See more...</a>
+          </div>
+        </div>
+        <div class="box">
+            <img src="Elephant.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="photo1.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic 6.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic0.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic3.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic4.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic7.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic1.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="pic5.jpg" />
+            <div class="content">
+              <h3>Beautiful Nature</h3>
+              <p>We Take you through the mother nature</p>
+              <a href="#" class="btn">See more...</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--review-->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>R</span>
+            <span>E</span>
+            <span>V</span>
+            <span>I</span>
+            <span>E</span>
+            <span>W</span>
+        </h1>
+        
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="pic0.jpg">
+                        <h2>I will replace this soon.</h2>
+                        <p>And, put the reviews</p>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="poonhill.jpg">
+                        <h2>I will replace this soon.</h2>
+                        <p>And, put the reviews</p>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="buddhagumba.jpg">
+                        <h2>I will replace this soon.</h2>
+                        <p>And, put the reviews</p>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="ktm.jpg">
+                        <h2>I will replace this soon.</h2>
+                        <p>And, put the reviews</p>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="pic7.jpg">
+                        <h2>I will replace this soon.</h2>
+                        <p>And, put the reviews</p>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--contact-->
+
+    <section class="contact" id="contact">
+
+      <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+      </h1>
+
+      <div class="row">
+
+        <div class="image">
+          <img src="buddhagumba.jpg" alt="">
+        </div>
+
+        <form action="">
+          
+          <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="subject" placeholder="subject">
+          </div>
+          <textarea placeholder="message" cols="30" rows="10"></textarea>
+          <input type="submit" class="btn" value="Send message">
+        </form>
+      </div>
+    </section>
+
+    <div class="copyright">
+      &copy; Copyright @nuj. Developed by <span>Anuj Neupane</span>.
+  </div>
+
+    <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  -->
+
+  <script src="{% static 'enroll/js/script.js' %}"></script>
+  </body>
+</html>
